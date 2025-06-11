@@ -1,0 +1,32 @@
+.bodyApp {
+  /* margin-top: 50px; */
+  gap: 302px;
+  background-color: #1E1E1E;
+  color: white; 
+  margin: 0;
+  padding: 0;
+  font-family: 'Racing Sans One', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  background-color: #1e1e1e;
+}
+
+
+
+.logoutBtn:hover{
+  color: #FFFFFF;
+  background-color: #1E1E1E;
+}
+
+
+
+@media (max-width: 576px) {
+  .bodyApp {
+    width: 100%;
+  }
+  .helloName{
+    font-size: small;
+  }
+  
+}

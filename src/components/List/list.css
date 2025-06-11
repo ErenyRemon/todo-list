@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.body {
+  background-color: #1E1E1E;
+  color: white; /* علشان الكلام يبان */
+  margin: 0;
+  padding: 0;
+  font-family: 'Racing Sans One', sans-serif;
+    height: 94vh;
+    width: 100%;
+  display: flex;
+  justify-content: center; /* توسيط أفقي */
+  align-items: center;     /* توسيط رأسي */
+  background-color: #1e1e1e; /* لو عايزة الخلفية تكون غامقة */
+}
+.todoText{
+    font-size: xx-large;
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    display: flex;
+
+    width: 30%;
+    margin: auto;
+}
+.input{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+    /* border: 1px solid rgb(155, 138, 138); */
+}
+.text_input{
+    border: 1px solid antiquewhite; 
+    padding: 5px;
+    width: 80%;
+    border-radius: 10px;
+}
+.add_button{
+    position: absolute;
+    right: 530px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    display: flex;
+    background-color:#4F4F4F;
+    color: white;
+    border: 0px;
+    border-radius: 15px;
+    height: 36px;
+    
+}
+.add_button:hover{
+    
+    background-color:#D9D9D9;
+    color: #4F4F4F;
+}
+
+.two_buttons{
+
+    display: flex;
+    gap: 10px;
+}
+
+.task_div{
+    justify-content: space-between;
+    width: 80%;
+    background-color: #222222;
+    display: flex;
+    margin: 5px;
+    margin: auto;
+    padding: 7px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.btn{
+    padding: 0px;
+    border: 0px;
+    display: flex;
+
+}
+
+.taskBtn:hover{
+    color:#999999;
+    background-color:#222222 !important;
+
+}
+.taskBtn{
+    background-color: #999999 ;
+}
+.text_task{
+    width: 75%;
+    margin-left: 10px;
+
+}
+
+
+.line2{
+    width: 31%;
+    margin: auto;
+}
+
+span.text {
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 576px) {
+    
+  .body {
+    padding: 10px;
+  }
+.todoText{
+    font-size: x-large;
+}
+  .text_input {
+      max-width: 100%;
+    }
+    
+    .add_button {
+      background-color: brown;
+    width: 80%;
+    right: 30px;
+    max-width: 150px; /* Limit button width */
+  }
+
+  .task_div {
+    /* flex-direction: column;  */
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .two_buttons {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .text_task {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .add_button{
+        right: 175px;
+        height: 38px;
+    }
+        .task_div {
+        max-width: 90%;
+        /* background-color: aqua; */
+    }
+
+    .text_input {
+        max-width: 350px;
+    }
+    .container{
+    width:600px
+    }
+}
