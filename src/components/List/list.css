@@ -119,9 +119,11 @@ span.text {
   align-items: center;
 }
 
-
 @media (max-width: 576px) {
     
+}
+    
+@media (max-width: 576px) {
   .body {
     padding: 10px;
   }
@@ -133,7 +135,7 @@ span.text {
     }
     
     .add_button {
-      background-color: brown;
+/*       background-color: brown; */
     width: 80%;
     right: 30px;
     max-width: 150px; /* Limit button width */
