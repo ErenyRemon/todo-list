@@ -4,16 +4,16 @@
 }
 .body {
   background-color: #1E1E1E;
-  color: white; /* علشان الكلام يبان */
+  color: white; 
   margin: 0;
   padding: 0;
   font-family: 'Racing Sans One', sans-serif;
     height: 94vh;
     width: 100%;
   display: flex;
-  justify-content: center; /* توسيط أفقي */
-  align-items: center;     /* توسيط رأسي */
-  background-color: #1e1e1e; /* لو عايزة الخلفية تكون غامقة */
+  justify-content: center; 
+  align-items: center;    
+  background-color: #1e1e1e; 
 }
 .todoText{
     font-size: xx-large;
@@ -186,6 +186,10 @@
   
 }
 
+span.text {
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 576px) {
   .tallHr {
@@ -200,6 +204,10 @@
 .smallDiv {
     padding: 10px; 
 }
+    
+}
+    
+@media (max-width: 576px) {
   .body {
     padding: 10px;
   }
@@ -214,13 +222,15 @@
       /* background-color: brown; */
     width: 15%;
     right: 65px;
+/*       background-color: brown; */
+    width: 80%;
+    right: 30px;
     max-width: 150px; /* Limit button width */
   }
   .smallDivContainer{
     max-width: 475px !important;
   }
   .task_div {
-    /* flex-direction: column;  */
     align-items: flex-start;
     padding: 10px;
   }
@@ -256,15 +266,6 @@
         max-width: 350px;
     }
     .container{
-      width:600px
+    width:600px
     }
-    .todoText{
-        font-size: x-large;
-    }
-    .tallHr {
-    width: 435px;
-}
-.smallDiv {
-    padding: 10px;
-}
 }
