@@ -19,7 +19,11 @@
   background-color: #1E1E1E;
 }
 
-
+@media (max-width: 460px) {
+  .bodyApp {
+        gap: 200px;
+  }
+}
 
 @media (max-width: 576px) {
   .bodyApp {
@@ -28,5 +32,10 @@
   .helloName{
     font-size: small;
   }
-  
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .bodyApp {
+      gap: 265px !important;
+  }
+} 
 }

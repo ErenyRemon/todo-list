@@ -91,14 +91,14 @@ function List({ user }) {
   return (
     <>
     <div className='body'>
-      <div  style={{backgroundColor: '#2C2C2C' , padding: '30px', borderRadius: '10px'}}> 
+      <div className='smallDiv'> 
         <div>
-          <Container className='d-flex justify-content-center' >
-            <Row className='d-flex justify-content-center align-items-center ' style={{ width: '600px' }}>
-              <Col className='d-flex justify-content-end '><hr style={{ width: '50px', color: 'white', height: '1px' }} /></Col>
+          <Container className='smallDivContainer d-flex justify-content-center' >
+            <Row className='firstRow d-flex justify-content-center align-items-center ' >
+              <Col className=' d-flex justify-content-end '><hr className='colHr' /></Col>
               {/* <div style={{backgroundColor: 'white', height: '1px', width: '50px'}}></div>  */}
-              <Col className='todoText' style={{ fontSize: 'xx-large' }}>TO-DO NOW</Col>
-              <Col className='d-flex justify-content-start '><hr style={{ width: '50px', color: 'white', height: '1px' }} /></Col>
+              <Col className='todoText'> <span> TO-DO NOW</span></Col>
+              <Col className='d-flex justify-content-start '><hr className='colHr' /></Col>
               {/* <div style={{backgroundColor: 'white', height: '1px', width: '50px'}}></div>  */}
               {/* <Col><hr /></Col> */}
             </Row>
@@ -108,9 +108,9 @@ function List({ user }) {
             <Row className='d-flex justify-content-center align-items-center'>
               {/* <Col><hr style={{width: '50px', color: 'white' , height: '1px'}}/></Col> */}
               {/* <div style={{backgroundColor: 'white', height: '1px', width: '50px'}}></div>  */}
-              <Col className='d-flex justify-content-start '><hr style={{ width: '150px', color: 'white', height: '1px' }} /></Col>
+              <Col className='d-flex justify-content-start '><hr className='colHR' /></Col>
               <Col><LuListTodo style={{ color: 'white', width: '24px', height: '24px' }} /></Col>
-              <Col className='d-flex justify-content-start '><hr style={{ width: '150px', color: 'white', height: '1px' }} /></Col>
+              <Col className='d-flex justify-content-start '><hr className='colHR' /></Col>
               {/* <div style={{backgroundColor: 'white', height: '1px', width: '50px'}}></div>  */}
               {/* <Col><hr /></Col> */}
             </Row>
@@ -129,8 +129,8 @@ function List({ user }) {
             <button className='add_button' onClick={addItem}>Add task</button>
           </div>
         </div>
-        <div className='d-flex justify-content-center' style={{ marginLeft: '25px', marginBottom: '30px' }}>
-          <hr style={{ width: '570px' }} />
+        <div className='divTallHr d-flex justify-content-center'>
+          <hr className='tallHr' />
         </div>
         <div className='main'>
           {tasks.map((task) => (

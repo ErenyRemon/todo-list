@@ -35,6 +35,20 @@
 .leftSide{
     width: 50%;
 }
+@media (max-width: 460px) {
+    .todoheader{
+        font-size: 30px !important;
+        
+    }
+    .superP{
+        font-size: medium;
+
+    }
+
+    
+
+}
+
 
 @media (max-width: 576px) {
     .rightSide{
@@ -44,7 +58,7 @@
     }
     .todoheader{
         font-size: 35px;
-        color: aqua !important;
+        /* color: aqua !important; */
     }
     .singBtn{
         font-size: medium;

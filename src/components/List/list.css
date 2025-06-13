@@ -44,8 +44,8 @@
     border-radius: 10px;
 }
 .add_button{
-    position: absolute;
-    right: 530px;
+  position: absolute;
+  right: 530px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
@@ -56,15 +56,15 @@
     border-radius: 15px;
     height: 36px;
     
-}
+  }
 .add_button:hover{
     
     background-color:#D9D9D9;
     color: #4F4F4F;
-}
-
-.two_buttons{
-
+  }
+  
+  .two_buttons{
+    
     display: flex;
     gap: 10px;
 }
@@ -79,77 +79,158 @@
     padding: 7px;
     align-items: center;
     border-radius: 10px;
-
+    
 }
 .main{
     display: flex;
     flex-direction: column;
     gap: 10px;
     
-}
-.btn{
+  }
+  .btn{
     padding: 0px;
     border: 0px;
     display: flex;
 
-}
+  }
 
-.taskBtn:hover{
+  .taskBtn:hover{
     color:#999999;
     background-color:#222222 !important;
 
-}
+  }
 .taskBtn{
-    background-color: #999999 ;
+  background-color: #999999 ;
 }
 .text_task{
-    width: 75%;
-    margin-left: 10px;
-
+  width: 75%;
+  margin-left: 10px;
+  
 }
 
-
+.firstRow{
+  width: 600px;
+}
 .line2{
-    width: 31%;
+  width: 31%;
     margin: auto;
+  }
+
+  span.text {
+    display: flex;
+    align-items: center;
+  }
+.colHr{
+  width: 30%;
+  color: white;
+  height: 1px;
 }
 
-span.text {
-  display: flex;
-  align-items: center;
+.colHR{
+  width: 150px;
+  color: white;
+  height: 1px;
+}
+
+.divTallHr{
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+.tallHr{
+  width: 570px;
+}
+
+.smallDiv{
+  background-color: #2C2C2C;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 460px) {
+  .smallDiv{
+    padding: 15px;
+  }
+  .colHR{
+    width: 80px;
+    
+  }
+  .colHr{
+    width: 50%;
+  }
+  .todoText{
+    padding-bottom: 6px;
+  }
+  .todoText span{
+    font-size: small !important;
+  }
+  .add_button{
+    width: 19% !important;
+    right: 55px !important;
+  }
+  .firstRow{
+    width: 285px;
+  }
+  .tallHr{
+    width: 315px !important;
+  }
+  .divTallHr{
+    margin-left: 15px;
+  }
+  .input{
+    width: 95%;
+  }
+  .task_div {
+    width: 85% !important;
+  }
+  
 }
 
 
 @media (max-width: 576px) {
-    
+  .tallHr {
+    width: 430px;
+}
+.divTallHr {
+    margin-left: 38px;
+  }
+  .colHr {
+    width: 50%;
+  }
+.smallDiv {
+    padding: 10px; 
+}
   .body {
     padding: 10px;
   }
 .todoText{
     font-size: x-large;
 }
-  .text_input {
-      max-width: 100%;
+.text_input {
+  max-width: 100%;
     }
     
     .add_button {
-      background-color: brown;
-    width: 80%;
-    right: 30px;
+      /* background-color: brown; */
+    width: 15%;
+    right: 65px;
     max-width: 150px; /* Limit button width */
   }
-
+  .smallDivContainer{
+    max-width: 475px !important;
+  }
   .task_div {
     /* flex-direction: column;  */
     align-items: flex-start;
     padding: 10px;
   }
-
+  
   .two_buttons {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: 100%;
     justify-content: flex-end;
   }
+  
 
   .text_task {
     max-width: 100%;
@@ -157,19 +238,33 @@ span.text {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+  .bodyApp {
+    gap: 250px;
+  }
     .add_button{
-        right: 175px;
+        right: 80px;
         height: 38px;
-    }
-        .task_div {
+      }
+      .task_div {
         max-width: 90%;
         /* background-color: aqua; */
-    }
-
-    .text_input {
+      }
+      .firstRow {
+        width: 480px;
+}
+      .text_input {
         max-width: 350px;
     }
     .container{
-    width:600px
+      width:600px
     }
+    .todoText{
+        font-size: x-large;
+    }
+    .tallHr {
+    width: 435px;
+}
+.smallDiv {
+    padding: 10px;
+}
 }
