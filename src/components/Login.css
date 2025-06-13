@@ -44,24 +44,22 @@
         font-size: medium;
 
     }
-
-    
-
 }
 
 
 @media (max-width: 576px) {
     .rightSide{
         width: 50%;
-        padding: 20px;
+        padding: 34px;
 
     }
     .todoheader{
         font-size: 35px;
-        /* color: aqua !important; */
     }
     .singBtn{
         font-size: medium;
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
 }
 
@@ -71,7 +69,6 @@
         width: 60%;
     }
     .todoheader{
-        /* color: brown !important; */
         font-size: 45px;
     }
     .singBtn{
